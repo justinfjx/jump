@@ -1,2 +1,0 @@
-# jump
-zotero-jump

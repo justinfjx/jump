@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Open in Zotero</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <p>正在打开 Zotero…</p>
+  <script>
+    const target = new URLSearchParams(location.search).get("target");
+    if (target) {
+      location.replace(target);
+    } else {
+      document.body.innerHTML = "<p>缺少 target 参数。</p>";
+    }
+  </script>
+</body>
+</html>
